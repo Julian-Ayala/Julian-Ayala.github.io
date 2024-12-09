@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Principal</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem 0;
+      text-align: center;
+      width: 100%;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin: 2rem 0;
+      padding: 1rem;
+      justify-content: center;
+    }
+    .menu a {
+      text-decoration: none;
+      background-color: #007BFF;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 1.2rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .menu a:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+    footer {
+      position: fixed;
+      margin-top: auto;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      padding: 1rem;
+      text-align: center;
+      background-color: #333;
+      color: white;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Menú Principal</h1>
+  </header>
+  <div class="menu">
+    <a href="alquilercarros.html">Alquiler de Carros</a>
+    <a href="nomina.html">Nómina</a>
+    <a href="perros.html">Alquiler de Perros</a>
+    <a href="parqueadero.html">Parqueadero</a>
+    <a href="juego.html">Juego de Preguntas</a>
+  </div>
+  <footer>
+    <p>Andres Julian Ayala Hernandez / 2900081  / SENA CBA</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Competencia de Perros</title>
+    <link rel="stylesheet" href="css/perros.css">
+    <script src="perros.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Competencia de Perros</h1>
+        <p>Indica el puesto obtenido para cada perro y verás su nuevo valor.</p>
+    </header>
+
+    <section>
+        <form id="formulario">
+            <div class="campo">
+                <label for="raza1">Primer puesto (raza):</label>
+                <select id="raza1">
+                    <option value="pitbull">Pitbull</option>
+                    <option value="buly">Buly</option>
+                    <option value="rottwhiler">Rottwhiler</option>
+                    <option value="labrador">Labrador Retriever</option>
+                    <option value="golden">Golden Retriever</option>
+                    <option value="doberman">Doberman</option>
+                    <option value="dogo">Dogo Argentino</option>
+                </select>
+                <label for="puesto1">Puesto (1, 2, 3):</label>
+                <input type="number" id="puesto1" min="1" max="3">
+            </div>
+
+            <div class="campo">
+                <label for="raza2">Segundo puesto (raza):</label>
+                <select id="raza2">
+                    <option value="pitbull">Pitbull</option>
+                    <option value="buly">Buly</option>
+                    <option value="rottwhiler">Rottwhiler</option>
+                    <option value="labrador">Labrador Retriever</option>
+                    <option value="golden">Golden Retriever</option>
+                    <option value="doberman">Doberman</option>
+                    <option value="dogo">Dogo Argentino</option>
+                </select>
+                <label for="puesto2">Puesto (1, 2, 3):</label>
+                <input type="number" id="puesto2" min="1" max="3">
+            </div>
+
+            <div class="campo">
+                <label for="raza3">Tercer puesto (raza):</label>
+                <select id="raza3">
+                    <option value="pitbull">Pitbull</option>
+                    <option value="buly">Buly</option>
+                    <option value="rottwhiler">Rottwhiler</option>
+                    <option value="labrador">Labrador Retriever</option>
+                    <option value="golden">Golden Retriever</option>
+                    <option value="doberman">Doberman</option>
+                    <option value="dogo">Dogo Argentino</option>
+                </select>
+                <label for="puesto3">Puesto (1, 2, 3):</label>
+                <input type="number" id="puesto3" min="1" max="3">
+            </div>
+
+            <button type="button" onclick="mostrarResultados()">Mostrar Nuevo Valor</button>
+        </form>
+
+        <div class="resultados">
+            <p id="resultado1"></p>
+            <p id="resultado2"></p>
+            <p id="resultado3"></p>
+        </div>
+    </section>
+</body>
+</html>
